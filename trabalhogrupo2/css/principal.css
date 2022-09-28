@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,500;1,700;1,800;1,900&family=Roboto+Condensed:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "poppins", sans-serif;  
+}
+
+body { 
+    overflow:hidden;
+    background-size: cover;
+    background-position: center;/*conseguir centralizar a imagem*/
+    height: 100vh;
+    width: 100%; 
+   
+}
+.background {
+    background-size: cover;
+    background-position:center; /*conseguir centralizar a imagem*/
+    height: 100vh;
+    width: 100%;
+
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 1rem;
+    background-color: rgb(0 0 0);
+    padding: 1em;
+
+} /* este é o cabeçalho todas as configurações de posições das opções para os usuarios estão aqui*/
+.cabeçalho-link {
+    cursor: pointer; 
+    gap: 3rem;
+    display: flex;
+    font-weight: 500;
+
+}
+
+.cabeçalho-link a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.cabeçalho-link a:hover {
+
+    color: rgb(206, 116, 179);
+    transition: 0.4s all;
+    border-radius: 20px;
+    
+}
+
+button {
+
+    color: rgb(0, 0, 0); 
+    padding: 5px;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+} /* margem e bordas modificadas, para possuir um formato mais oval, incluindo aqui também a cor preta para as letras*/
+
+    button:hover{
+        background-color: rgb(114, 27, 172);
+        color:white;
+    } /* quando o usuario passar o cursor em cima de cada opção, ele mudará de cor*/
+
+    .logo {/*para pode adicionar a logo do meu site*/
+        height: 120px;
+        width: 50px;
+        border: 5px solid rgb(0, 0, 0);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    
+    }
