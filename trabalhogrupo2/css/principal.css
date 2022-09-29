@@ -14,7 +14,7 @@
     text-transform: capitalize;
     transition: all 2s line;
 }
-html {font-size: 60%;
+html {font-size: 62%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
@@ -36,8 +36,7 @@ body {
 }
 header {
     width: 100%;
-    position: fixed;
-    top:0; left: 0; right:0;
+    position: fixed; top: 0; left: 0; right:0;
     display: flex;
     justify-content:space-between;
     text-align: center;
@@ -48,8 +47,7 @@ header {
 
 } /* este é o cabeçalho todas as configurações de posições das opções para os usuarios estão aqui*/
 
-
-.cabeçalho-link {
+header .cabeçalho-link {
     cursor: pointer; 
     gap: 3rem;
     display: flex;
@@ -59,19 +57,20 @@ header {
   
 }
 
-.cabeçalho-link a{
+header .cabeçalho-link a{
     color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 4rem;
     padding: 5rem 1.5rem;
     font-size: 1.7rem;
 }
-.cabeçalho-link a.active, 
-.cabeçalho-link a:hover {
+header .cabeçalho-link a.active, 
+header .cabeçalho-link a:hover {
 
     color: rgb(206, 116, 179);
     transition: 0.4s all;
     border-radius: 20px;
+    
     
 }
 
@@ -100,6 +99,17 @@ button {
         cursor: pointer;
     
     }
+
+    .icones {
+    cursor: pointer; 
+    gap: 1rem;
+    display: flex;
+    font-weight: 500;
+    border-radius: 5rem;
+    color:aliceblue;
+   
+    }
+
     header .icones i,
     header .icones a {
 
@@ -108,10 +118,13 @@ button {
         height: 4.5rem;
         width: 4.5rem;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 20px;
         color: black;
         border-radius: 50%;
         background: white;
+        padding: 5rem, 1.5rem;
+        line-height: 4.5rem;
+        
 
     }
     header .icones i:hover,
@@ -119,6 +132,52 @@ button {
         color: rgb(196, 193, 193);
         background: var(red);
         transform: rotate(360deg);
-
+        border-radius: 20px;
+        transition: 0.5s all;
 
     }
+ 
+
+
+
+
+
+@media (max-width:991px) {
+    
+html {font-size: 55%; 
+}
+   header {
+    padding: 1rem, 2rem;
+   }
+
+}
+@media (max-width:768px) {
+header .icones #menu-bars {
+    display: inline-block;
+}
+header .cabeçalho-link{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background: whitesmoke;
+    border-top: 1rem solid black;
+    border-bottom: 1rem, black ;
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+ header .cabeçalho-link a{
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2.5rem;
+    background: whitesmoke;
+
+}
+}
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+} 
