@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,500;1,700;1,800;1,900&family=Roboto+Condensed:ital@1&display=swap');
 
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "poppins", sans-serif;  
+    font-family: "poppins", sans-serif;
+    outline: none;
+    border:none;  
+    text-transform: capitalize;
+    transition: all 2s line;
 }
-
+html {font-size: 60%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
 body { 
-    overflow:hidden;
+    
     background-size: cover;
     background-position: center;/*conseguir centralizar a imagem*/
     height: 100vh;
@@ -25,30 +35,38 @@ body {
 
 }
 header {
+    width: 100%;
+    position: fixed;
+    top:0; left: 0; right:0;
     display: flex;
-    justify-content: space-around;
-    max-width: 100%;
+    justify-content:space-between;
     text-align: center;
     align-items: center;
-    padding-top: 1rem;
+    padding: 1rem 7%;
     background-color: rgb(0 0 0);
-    padding: 1em;
+    z-index: 1000;
 
 } /* este é o cabeçalho todas as configurações de posições das opções para os usuarios estão aqui*/
+
+
 .cabeçalho-link {
     cursor: pointer; 
     gap: 3rem;
     display: flex;
     font-weight: 500;
-
+    border-radius: 5rem;
+    color:aliceblue;
+  
 }
 
 .cabeçalho-link a{
     color: rgb(255, 255, 255);
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 4rem;
+    padding: 5rem 1.5rem;
+    font-size: 1.7rem;
 }
-
+.cabeçalho-link a.active, 
 .cabeçalho-link a:hover {
 
     color: rgb(206, 116, 179);
@@ -81,4 +99,26 @@ button {
         align-items: center;
         cursor: pointer;
     
+    }
+    header .icones i,
+    header .icones a {
+
+        cursor: pointer;
+        margin-left: 5rem;
+        height: 4.5rem;
+        width: 4.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        color: black;
+        border-radius: 50%;
+        background: white;
+
+    }
+    header .icones i:hover,
+    header .icones a:hover {
+        color: rgb(196, 193, 193);
+        background: var(red);
+        transform: rotate(360deg);
+
+
     }
