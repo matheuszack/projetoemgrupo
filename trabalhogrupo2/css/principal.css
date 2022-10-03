@@ -25,7 +25,14 @@ body {
 section{
     padding:2rem 9%;
 }
-
+.sobre {
+   background-color: rgb(140, 18, 197);
+   width: 600px;
+   padding: 30px;
+   margin: auto;
+   border-radius: 20px;
+   box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+}
 
 .subtítulo{
     text-align: center;
@@ -225,7 +232,7 @@ header .icons #menu-bars{
     color:red;
     font-size: 4rem;
     padding:.5rem 0;
-    text-align: justify;
+    text-align: center
 }
 
 .content p {
@@ -236,6 +243,13 @@ header .icons #menu-bars{
     text-align: center;
 }
 
+.pizzas {
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    background-position: right;
+}
 .sobre .row .content .icons-container{
     display: flex;
     gap:1rem;
@@ -393,6 +407,7 @@ header .icons #menu-bars{
 
 
      .wraper { background-position: center;
+        padding-top: 150px;/*fazer os slide´s descerem*/
         height: auto;
         width: 50%;
         margin: 0 auto;
@@ -443,4 +458,3 @@ header .icons #menu-bars{
         }
     }
     
-
