@@ -66,18 +66,28 @@ section{
    
 }
 
-header{
+header {
     width: 100%;
-    position:fixed;    top:0; left: 0; right:0;
-    background: rgb(0, 0, 0);
-    padding: 1rem 7%;
+    position:relative;
+    top:0; left: 0; right:0;
     display: flex;
-    text-align:center;
+    justify-content:space-between;
+    text-align: center;
     align-items: center;
-    justify-content:space-between ;
+    padding: 1rem 7%;
+    background-color: rgb(0 0 0);
     z-index: 1000;
-    position: relative;
-    
+
+} /* este é o cabeçalho todas as configurações de posições das opções para os usuarios estão aqui*/
+
+header .logo{
+    color: black;
+    font-size: 1px;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:black;
 }
 
 header .cabeçalho-link {
@@ -91,48 +101,23 @@ header .cabeçalho-link {
 }
 
 header .cabeçalho-link a{
+    color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 4rem;
     font-size: 1.7rem;
-    color:white;
- 
 }
+header .cabeçalho-link a.active, 
+header .cabeçalho-link a:hover {
 
-header .cabeçalho-link a.active,
-header .cabeçalho-link a:hover{
-    color:rgb(88, 15, 148);
-    background: rgb(59, 5, 66);
+    color: rgb(206, 116, 179);
     transition: 0.4s all;
     border-radius: 20px;
+    
 }
 
-.icones {
-    cursor: pointer; 
-    gap: 1rem;
-    display: flex;
-    font-weight: 500;
-    border-radius: 5rem;
-    color:aliceblue;
-   
-}
-
-header .icones i,
-header .icones a{
-        cursor: pointer;
-        margin-left: 5rem;
-        height: 4.5rem;
-        width: 4.5rem;
-        text-align: center;
-        font-size: 20px;
-        color: black;
-        border-radius: 50%;
-        background: white;
-        padding: 5rem, 1.5rem;
-        line-height: 4.5rem;
-}
 button {
 
-    color: rgb(86, 15, 128); 
+    color: rgb(0, 0, 0); 
     padding: 5px;
     width: 150px;
     border-radius: 15px;
@@ -145,15 +130,54 @@ button {
         color:white;
     } /* quando o usuario passar o cursor em cima de cada opção, ele mudará de cor*/
 
+    .logo {/*para pode adicionar a logo do meu site*/
+        height: 120px;
+        width: 50px;
+        border: 5px solid rgb(0, 0, 0);
+        padding-right: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    
+    }
 
-header .icones i:hover,
-header .icones a:hover{
-    color:rgb(248, 246, 246);
-    background:rgb(86, 15, 128);
-    transform: rotate(360deg);
-    border-radius: 20px;
-    transition: 0.5s all;
-}
+    .icones {
+    cursor: pointer; 
+    gap: 1rem;
+    display: flex;
+    font-weight: 500;
+    border-radius: 5rem;
+    color:aliceblue;
+   
+    }
+
+    header .icones i,
+    header .icones a {
+
+        cursor: pointer;
+        margin-left: 5rem;
+        height: 4.5rem;
+        width: 4.5rem;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        border-radius: 50%;
+        background: white;
+        padding: 5rem, 1.5rem;
+        line-height: 4.5rem;
+        
+
+    }
+    header .icones i:hover,
+    header .icones a:hover {
+        color: rgb(196, 193, 193);
+        background:rgb(86, 15, 128);
+        transform: rotate(360deg);
+        border-radius: 20px;
+        transition: 0.5s all;
+
+    }
 
 
 #search-form{
@@ -259,13 +283,13 @@ header .icones a:hover{
     max-height: 200px;
     width: auto;
     height: auto;
-    background-position: right;
+    background-position: center;
 }
-.sobre .row .content .icons-container{
+.sobre .row .content .icones-container{
     display: flex;
     gap:1rem;
     flex-wrap: wrap;
-    padding:1rem 0;
+    padding: 1rem 0;
     margin-top: .5rem;
 }
 
@@ -421,7 +445,7 @@ header .icones a:hover{
 
 
      .wraper { background-position: center;
-        padding-top: 150px;/*fazer os slide´s descerem*/
+        padding-top: 30px;/*fazer os slide´s descerem*/
         height: auto;
         width: 50%;
         margin: 0 auto;
@@ -457,17 +481,14 @@ header .icones a:hover{
       100%{margin-left:0%;}
       }
       
-   @media (max-width:991px) {
-    
-        html {font-size: 55%; 
+ 
+           @media (max-width:768px) {
+           
+            header .cabeçalho-link {
+                display: list-item;  
         }
-           header {
-            padding: 1rem, 2rem;
-           }
-        
-        }
-        @media (max-width:768px) {
-        header .icons #menu-bars {
+        header .icones #menu-bars {
             display: list-item;
         }
     }
+    
