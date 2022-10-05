@@ -134,8 +134,8 @@ button {
         transition: 0.5s all;
     }    
     .formulario {
-        padding-top: 50px;
-        padding-left: 250px;
+        padding-top: 140px;
+        padding-left: 1200px;
         width: 80%;
         height: 80%;
         display: flex;
@@ -218,7 +218,7 @@ button {
                 box-shadow: 1px 1px 6px rgb(26, 21, 21);
                 width: 250px;
                 height: 250px;
-               
+                               
             }
 
             
@@ -245,4 +245,3 @@ html {font-size: 55%;
         display: list-item;
     }
 }
-
