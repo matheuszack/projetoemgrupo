@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,12 +16,11 @@ html {font-size: 62%;
     scroll-behavior: smooth;
 }
 body { 
-
-    background-repeat:no-repeat; /*Não repetir a imagem*/
     background-size: cover; /*Ficou muito grande e sem a imagemque fica no final*/
     background-position: center;/*conseguir centralizar a imagem*/
     height: 100vh;
     width: 100%; 
+    background-image: -o-linear-gradient(rgb(1, 2, 24) rgb(0, 0, 15) rgb(7, 2, 54)  rgb(6, 5, 70)  rgb(22, 4, 71)  rgb(34, 7, 85) rgb(38, 8, 73) rgb(52, 5, 83) rgb(79, 8, 112));
    
 }
 .background {
@@ -274,8 +273,12 @@ border: 0;
 cursor:pointer;
 font-size: 80%;
 font-weight: 100;
+font-size: 15px;
 }
-    
+section .contentBx{
+        font-size: 13px;
+        color: rgb(0, 248, 248);
+    }
 
 @media screen and (max-width:720px){/*Quando chegar 720 a tela, ele vai mudar para coluna um em baixo do outro*/
     main.cards{
