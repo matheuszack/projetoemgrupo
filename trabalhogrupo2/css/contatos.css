@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -202,7 +202,7 @@ button {
         .button .value {
             cursor: pointer;
             text-align: center;
-            color:rgb(118, 31, 145);
+            color:rgb(103, 50, 117);
             font-size: 16px;
          
         }
@@ -221,8 +221,19 @@ button {
                                
             }
 
-            
-
+         form .name .sucess input {
+border: 3px solid rgb(156, 184, 156);
+         }
+         form .email .error input{
+            border: 3px solid rgb(240, 86, 86);
+         }
+form .email .error input small {
+visibility: hidden;
+position: absolute;
+margin-top: 5px;
+font-size: 14px;
+color: brown;
+}
 
 @media (max-width:991px) {
     
@@ -237,11 +248,14 @@ html {font-size: 55%;
 @media (max-width:960px) {
     .formulario {
         width: 50%;
+        text-align: center;
+        justify-content: center;
+        padding-left: 300px;
     }   
         header .cabeçalho-link {
             display: list-item;  
     }
-    header .icones #menu-bars {
+    header .icones {
         display: list-item;
     }
 }
