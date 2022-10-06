@@ -173,43 +173,12 @@ button {
         flex-direction:column;
         }
         
-
-@media (max-width:991px) {
-    
-html {font-size: 55%; 
-}
-   header {
-    padding: 1rem, 2rem;
-   }
-
-}
-@media (max-width:768px) {
-header .icones #menu-bars {
-    display: inline-block;
-}
-header .cabeçalho-link{
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    background: whitesmoke;
-    border-top: 1rem solid black;
-    border-bottom: 1rem, black ;
-    padding: 1rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
- header .cabeçalho-link a{
-    display: block;
-    padding: 1.5rem;
-    margin: 1rem;
-    font-size: 2.5rem;
-    background: whitesmoke;
-
-}
-}
-@media (max-width:991px) {
-    html{
-        font-size: 55%;
+        @media (max-width:768px) {
+           
+            header .cabeçalho-link {
+                display: list-item;  
+        }
+        header .icones #menu-bars {
+            display: list-item;
+        }
     }
-    header{
-        padding: 1rem 2rem;
-    }
-} 
