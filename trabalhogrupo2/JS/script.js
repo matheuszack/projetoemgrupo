@@ -1,4 +1,3 @@
-
 document.querySelector('#search-icon').onclick = () =>{
   document.querySelector('#search-form').classList.toggle('active');
 }
@@ -54,3 +53,48 @@ function fadeOut(){
 }
 
 window.onload = fadeOut;
+
+
+
+const form = document.getElementsById('form')
+const username = document.getElementsById('username')
+const email = document.getElementsById('email')
+
+form.addEventListener ('submit', (e) =>  {
+  e.preventDefault ()
+
+  checkInputs()
+
+}  )
+
+function checkInputs() {
+  const  usernameValue = username.value.trim()
+  const  emailValue = email.value.trim()
+  if(usernameValue === '') {
+    errorValidation(username, 'Preencha esse campo' )
+  }
+else {
+  successValidation(username)
+
+}
+if(emailValue === ''){
+  errorValidation(email, 'preencha esse campo')
+} else {
+  successValidation(email)
+}
+}
+function errorValidation(input, menssage) {
+const name = input.parentElement;
+const small = name.querySelector('small')
+small.innerText = message
+name.className = 'name error'
+}
+
+function successValidation(input) {
+  const name = input.parentElement;
+
+
+  name.className = 'name success'
+}
+
+
