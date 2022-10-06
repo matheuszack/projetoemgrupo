@@ -7,7 +7,6 @@
     font-family: "poppins", sans-serif;
     outline: none;
     border:none;  
-    text-transform: capitalize;
     transition: all 2s line;
 }
 html {
@@ -133,8 +132,27 @@ button {
         border-radius: 20px;
         transition: 0.5s all;
     }    
+
+    main h1 {
+    
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        border-color: blueviolet;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #parecido {
+        display:inline-block;
+        background-color: #CD96CD;
+        width: 600px;
+        height: 40px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        display:flex;
+        border-radius: 30%;
+    }    
     .formulario {
-        padding-top: 140px;
+        padding-top: 90px;
         padding-left: 1200px;
         width: 80%;
         height: 80%;
@@ -162,7 +180,7 @@ button {
             box-shadow: 1px 1px 6px rgb(26, 21, 21);
         }
         .name input:hover {
-            background-color: rgb(214, 191, 235);
+            background-color: #afd1ec;
         }
         .name input:focus-visible {
             outline: 1px solid rgb(165, 91, 235);
@@ -176,11 +194,12 @@ button {
             box-shadow: 1px 1px 6px rgb(26, 21, 21);
         }
         .email input:hover {
-            background-color: rgb(214, 191, 235);
+            background-color: #afd1ec;
         }
         .email input:focus-visible {
             outline: 1px solid rgb(165, 91, 235);
         }
+        
         .formulario .row {
             color: aliceblue;
             font-size: 20px;
@@ -218,8 +237,11 @@ button {
                 box-shadow: 1px 1px 6px rgb(26, 21, 21);
                 width: 250px;
                 height: 250px;
-                               
+                                          
             }
+            .row input:hover {
+                background-color: #afd1ec; 
+            }    
 
          form .name .sucess input {
 border: 3px solid rgb(156, 184, 156);
