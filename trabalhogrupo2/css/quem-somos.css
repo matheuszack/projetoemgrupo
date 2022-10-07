@@ -177,8 +177,7 @@ main p {
         flex-direction:column;
     }
     .novo {
-        display: flex;
-        padding: flex;
+        display: flex, padding:flex;
         text-align: center;
         background-color: #afd1ec;
         font-family: Arial, Helvetica, sans-serif;
