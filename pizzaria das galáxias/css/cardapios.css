@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "poppins", sans-serif;
+    outline: none;
+    border:none;  
+    transition: all 2s line;
+}
+html {font-size: 62%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+body { 
+    background-size: cover; /*Ficou muito grande e sem a imagemque fica no final*/
+    background-position: center;/*conseguir centralizar a imagem*/
+    height: 100vh;
+    width: 100%; 
+    background-image: -o-linear-gradient(rgb(1, 2, 24) rgb(0, 0, 15) rgb(7, 2, 54)  rgb(6, 5, 70)  rgb(22, 4, 71)  rgb(34, 7, 85) rgb(38, 8, 73) rgb(52, 5, 83) rgb(79, 8, 112));
+   
+}
+.background {
+    background-position: center;
+    background-size: cover;
+    background-position:center; /*conseguir centralizar a imagem*/
+    height: 100vh;
+    width: 100%;
+
+}
+header {
+    width: 100%;
+    position: relative; 
+    top: 0; left: 0; right:0;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgb(0 0 0);
+    z-index: 1000;
+
+} /* este é o cabeçalho todas as configurações de posições das opções para os usuarios estão aqui*/
+
+header .logo{
+    color: black;
+    font-size: 1px;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:black;
+}
+
+header .cabeçalho-link {
+    cursor: pointer; 
+    gap: 3rem;
+    display: flex;
+    font-weight: 500;
+    border-radius: 5rem;
+    color:aliceblue;
+  
+}
+
+header .cabeçalho-link a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 4rem;
+    font-size: 1.7rem;
+}
+header .cabeçalho-link a.active, 
+header .cabeçalho-link a:hover {
+
+    color: rgb(206, 116, 179);
+    transition: 0.4s all;
+    border-radius: 20px;
+    
+}
+
+button {
+
+    color: rgb(0, 0, 0); 
+    padding: 5px;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+} /* margem e bordas modificadas, para possuir um formato mais oval, incluindo aqui também a cor preta para as letras*/
+
+    button:hover{
+        background-color: rgb(114, 27, 172);
+        color:white;
+    } /* quando o usuario passar o cursor em cima de cada opção, ele mudará de cor*/
+
+    .logo {/*para pode adicionar a logo do meu site*/
+        height: 120px;
+        width: 50px;
+        border: 5px solid rgb(0, 0, 0);
+        padding-right: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    
+    }
+
+    .icones {
+    cursor: pointer; 
+    gap: 1rem;
+    display: flex;
+    font-weight: 500;
+    border-radius: 5rem;
+    color:aliceblue;
+   
+    }
+
+    header .icones i,
+    header .icones a {
+
+        cursor: pointer;
+        margin-left: 5rem;
+        height: 4.5rem;
+        width: 4.5rem;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        border-radius: 50%;
+        background: white;
+        padding: 5rem, 1.5rem;
+        line-height: 4.5rem;
+        
+
+    }
+    header .icones i:hover,
+    header .icones a:hover {
+        color: rgb(196, 193, 193);
+        background:rgb(86, 15, 128);
+        transform: rotate(360deg);
+        border-radius: 20px;
+        transition: 0.5s all;
+
+    }
+
+    ul 
+    {
+        display:flex; /* como vai ficar o dispaly*/
+        border: #dff51c;
+        justify-content:space-around; /* Posição das Palavras ul*/
+        padding: 20px; /*Espaço entre eles*/
+        padding-left: 20%;
+        padding-right: 20%;
+        align-items: center;/* Alinhar os itens no centro*/
+        list-style-type: none;
+    }
+ ul header{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 33.3333%;
+    height: 40px;
+    padding: 20 10px;
+    }
+
+     li{
+        
+            background-color:#CD96CD;
+            padding: 2px;
+            flex-direction:column;/*Coluna do lado*/
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            border-radius: 30%;
+}
+.elementor{ /* Seção Cardapio e Promoçoes*/
+
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    padding: 20 10px;    
+    padding-top: 75px;/*distancia entre itens um em cima do outro*/
+    position: relative;
+    padding-bottom: 100px;
+    
+}
+.elementor h1{/*Texto Cardapio*/
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    position:relative;
+    padding-left: 550px;
+ 
+}
+.baixo h1{  /*Texto Promoção*/
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    padding-left: 550px;
+    padding-top: 25px;
+    
+}
+
+    
+
+
+.card{
+    position: relative;
+    width: 160px;
+    height: 220px;
+    background: rgba(71, 20, 71, 0.452);
+    border-radius: 20px;
+    overflow:hidden;
+   
+}
+    .card:before{
+        content: '';
+        position: absolute;
+        top: -60%;
+        width: 100%;
+        height: 100%;
+        background: #afd1ec;
+        transform: skewY(345deg);
+        transition: 0.5s;
+}
+.card:hover::before{
+    transform: skewY(390deg);
+    top: -70%;
+}
+.card::after{
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 7.9em;
+    color: rgba(0, 0, 0, 0.1);
+    
+}
+
+
+
+    h2#hCardapio {
+        clear:both;
+      text-align: center;
+      padding:30px;
+ 
+    }
+    section#cardapio {
+        margin:0 auto;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-gap: 20px;
+      width:70%;
+      max-width: 800px;
+      padding-bottom: 50px;
+   
+     
+    }
+    section#cardapio article {
+    
+      text-align:center;
+      
+    }
+    section#cardapio article h3 {
+        padding: 10px 20px;
+     color: #f5f5f5;
+     padding: 2px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+          
+    
+    }
+
+    .botaoCardapio {
+        background-color:#CD96CD;
+        padding: 2px;
+        flex-direction:column;/*Coluna do lado*/
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        border-radius: 20%;
+    }
+    .botaoCardapio:hover{
+        cursor: pointer;
+        background-color: #a211f7;
+    }
+
+    .imagemCardapio {
+      width:100%;
+      height:100%;
+      max-width: 150px;
+      max-height: 90px;
+      border-radius: 29%;
+    }
+    div#janela {
+        position: fixed;
+        display: none;
+      background: rgba(133, 46, 209, 0.5);
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+   
+    }
+    section#popup {
+      position: relative;
+      background: rgb(183, 160, 190);
+      width:100%;
+      max-width: 800px;
+      height: 400px;
+      margin: 10% auto;
+      color: black;  
+      padding-bottom: 40px;   
+    }
+    section#popup label {
+        font-size:16px;
+        /* palavra quantidade dentro do popup*/
+    }
+    
+    .popupImg {
+      background: white;
+      width:400px;
+      height:400px;
+      max-width: 400px;
+      float:left;
+      margin-right:20px;
+
+    }
+    h2#popupNome {
+      padding-top:50px;
+      padding-right:30px;
+      /* título do produto dentro do popup*/
+    
+    }
+    h4#popupValor {
+      margin-top:10px;
+      font-style: bold;
+      /* valor do produto dentro do popup */
+    }
+    p#popupDesc {
+        font-size:16px;
+      padding-right: 35px;
+      line-height: 20px;
+      text-align: justify;
+      margin-bottom:20px;
+      margin-top:20px;
+      /* descrição do produto */
+    }
+    #popupImg {
+      width:100%;
+      height:100%;
+      max-width:400px;
+      max-height:400px;
+      object-fit: cover;
+    }
+    section#carrinho {
+      position:relative;
+      top:0;
+      right:0;
+      width:300px;
+      height:100%;
+      display: none;
+      background: white;
+   }
+   section#carrinho a {
+    float:right;
+     padding:20px;
+     
+   }
+    .botaoAdicionar {
+      background: rgb(53, 4, 231);
+      float:left;
+      width:160px;
+      text-align: center;
+      color:#ffffff;
+      font-size:16px;
+      padding:5px 10px;
+      border-radius: 50px;
+    }
+    .botaoAdicionar:hover
+    {
+        cursor: pointer;
+        background-color: #a211f7;
+        border-radius: 20px;
+    }
+    .fecharCarrinho {
+        padding-right: 50px;
+        background: rgb(53, 4, 231);
+        float:left;
+        width:160px;
+        text-align: center;
+        color:#ffffff;
+        font-size:16px;
+        padding:5px 10px;
+        border-radius: 50px;
+
+    }
+    .fecharCarrinho:hover{
+        cursor: pointer;
+        background-color: #a211f7;
+        border-radius: 20px;
+    }
+    @media (max-width:768px) {
+           
+        header .cabeçalho-link {
+            display: list-item;  
+    }
+    header .icones #menu-bars {
+        display: list-item;
+    }
+}
+
+ 
+
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/cardapios.css">
+    <link rel="stylesheet" href="cardápio.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title>Pizza das Galaxyas - Cardápio Pizza das Galaxyas Rio de Janeiro</title>
+    
+</head>
+
+<body background="imagem/fundo-pizza3.png">
+    <div class="background">
+        <header>
+            <div class="logo">
+                <i><img src="imagem/picwish-logo.png" alt="Image" height="160" width="160"></i>
+            </div>
+              <div class="cabeçalho-link">
+              <a class="active" href="index.html"><button>Base</button></a>
+              <a href="quem-somos.html"><button>Quem somos</button></a>
+                <a href="nossa-equipe.html"><button>Nossa equipe</button></a>
+            <a href="cardápio.html"><button>Cardápio</button></a>
+              <a href="contatos.html"><button>Contato</button></a>
+              </div>
+              <div class="icones">
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="https://ifoodbr.onelink.me/F4X4/ofornes" class="fas fa-pizza-slice">
+                <a href="#" class="fa-solid fa-shuttle-space"></a>
+              </div>
+        </header>
+
+              <nav>
+                <ul>      
+                  <li> Pedido minimo: $20,00</li>
+                  <li> Tempo estimado: 70 min </li>
+                  <li> Aberto: Segunda a Sexta das 09:00h até 22:00h </li>
+                </ul>
+              </nav>
+              
+              <section class="elementor">
+                <h1>Cardápio</h1>
+              </section>
+              
+
+              <section id='cardapio' >
+      
+                <article class="card">
+                  <img src='imagem/cardapios/BACON-COM-CATUPIRY.jpg' class='imagemCardapio'>
+                  <h3 class='nomeP'>Bacon com catupiry</h3>
+                  <div class='botaoCardapio' onclick="pedido(1)">
+                    comprar agora
+                  </div>
+                </article>
+                
+            
+               <article class="card">
+                  <img src='imagem/cardapios/banana-com-canela.jpg' class='imagemCardapio'>
+                  <h3 class='nomeP'>Banana com canela</h3>
+                  <div class='botaoCardapio' onclick="pedido(2)">
+                    comprar agora
+                  </div>
+                </article>
+    
+                <article class="card">
+                  <img src='imagem/cardapios/banana-nevada.jpg' class='imagemCardapio'>
+                  <h3 class='nomeP'>Banana nevada</h3>
+                  <div class='botaoCardapio' onclick="pedido(3)">
+                    comprar agora
+                  </div>
+                </article>
+                <article class="card">
+                    <img src='imagem/cardapios/CALABRESA-COM-CATUPIRY.jpg' class='imagemCardapio'>
+                    <h3 class='nomeP'>Calabresa com Catupiry</h3>
+                    <div class='botaoCardapio' onclick="pedido(4)">
+                      comprar agora
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img src='imagem/cardapios/Calabresa-com-cebola.jpg' class='imagemCardapio'>
+                    <h3 class='nomeP'>Calabresa com cebola</h3>
+                    <div class='botaoCardapio' onclick="pedido(5)">
+                      comprar agora
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img src='imagem/cardapios/CAMARAO-COM-CATUPIRY.jpg' class='imagemCardapio'>
+                    <h3 class='nomeP'>Camarão com Catupiry</h3>
+                    <div class='botaoCardapio' onclick="pedido(6)">
+                      comprar agora
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img src='imagem/cardapios/Carne-seca-com-catupiry.jpg' class='imagemCardapio'>
+                    <h3 class='nomeP'>Carne seca com Catupiry</h3>
+                    <div class='botaoCardapio' onclick="pedido(7)">
+                      comprar agora
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img src='imagem/cardapios/chocolate-ao-leite-e-chocolate-branco.jpg' class='imagemCardapio'>
+                    <h3 class='nomeP'>Chocolate Preto e Branco</h3>
+                    <div class='botaoCardapio' onclick="pedido(8)">
+                      comprar agora
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img src='imagem/cardapios/Champignon.jpg' class='imagemCardapio'>
+                    <h3 class='nomeP'>Pizza de Champignon</h3>
+                    <div class='botaoCardapio' onclick="pedido(9)">
+                      comprar agora
+                    </div>
+                  </article>
+                  
+                  <article class="card">
+                    <img src='imagem/cardapios/chocolate-ao-leite-com-morango.jpg' class='imagemCardapio'>
+                    <h3 class='nomeP'>Chocolate com Morango</h3>
+                    <div class='botaoCardapio' onclick="pedido(10)">
+                      comprar agora
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img src='imagem/cardapios/Quatro-queijo.jpg' class='imagemCardapio'>
+                    <h3 class='nomeP'>Pizza 4 Queijos</h3>
+                    <div class='botaoCardapio' onclick="pedido(11)">
+                      comprar agora
+                    </div>
+                  </article>
+                                 
+              </section>
+            
+        
+              <div id='janela'>
+              <section id="popup">
+                <div class='popupImg'>
+                  <img id='popupImg' src='imagem/fundo-pizza5.png'>
+                </div>
+                <h2 id='popupNome'>&nbsp;</h2>
+                <h4 id='popupValor'>&nbsp;</h4>
+                <label for="quantidadeProduto">Tamanho</label>
+                <select id="quantidadeProduto">
+                  <option value="1">Pequena</option>
+                  <option value="2">Media</option>
+                  <option value="3">Grande</option>
+                </select>
+                <p id='popupDesc'>&nbsp;</p>
+                <div class='botaoAdicionar' onclick="adicionarCarrinho()">adicionar a sua nave</div>
+                <a class="fecharCarrinho" onclick="fecharPedido()">fechar</a>
+              </section>
+              </div>
+              
+            
+              
+              <script>
+                  var sacola = window.document.getElementById('carrinho')
+                  var chave = window.document.getElementById('janela')
+                  var nome = ['nomeP']
+                  var valor = [39.90,49.90,59.90,33.90,45.99, 54.90, 44.90,40.90,40.00,35.99,49.90]
+                  var desc = ['pizza com bacon recheada com presunto, champignon e catupiry salpicado com bacon crocante.',
+                  'pizza de banana com canela',
+                  'Com uma massa leve e um recheio feito com bananas em rodela, chocolate branco, açúcar e canela, essa pizza serve a família toda, aproveite nossa promoção, apenas nessa Galaxya.', 'Com uma massa leve recheio de banana com leite em pó', 'Com uma massa leve borda recheada',
+                  'Com uma massa leve com borda recheada molho da casa'
+                ]
+                  var foto = ['imagem/cardapios/BACON-COM-CATUPIRY.jpg', 
+                
+                 'imagem/cardapios/banana-com-canela.jpg' , 'imagem/cardapios/banana-nevada.jpg', 'imagem/cardapios/CALABRESA-COM-CATUPIRY.jpg', 'imagem/cardapios/Calabresa-com-cebola.jpg' , 'imagem/cardapios/CAMARAO-COM-CATUPIRY.jpg',  'imagem/cardapios/Carne-seca-com-catupiry.jpg' ,  'imagem/cardapios/chocolate-ao-leite-e-chocolate-branco.jpg' , 'imagem/cardapios/Champignon.jpg' , 'imagem/cardapios/chocolate-ao-leite-com-morango.jpg' , 'imagem/cardapios/Quatro-queijo.jpg', ]
+                  function pedido (item){
+                    chave.style.display = 'block'
+                
+                    if (item==1){
+                      item = 0
+                    } else if (item==2){
+                      item = 1
+                    }  else if (item==3){
+                      item = 2 
+                    } else if (item==4){
+                      item = 3
+                    }  else if (item==5){
+                       item = 4
+                    } else if (item==6){
+                      item = 5
+                    }  else if (item==7){
+                      item = 6
+                    } else if (item==8){
+                      item = 7
+                    } else if (item==9){
+                      item = 8
+                    }  else if (item==10){
+                      item = 9
+                    } 
+                    
+                  
+                  let popupNome = document.getElementById('popupNome')
+                  let popupValor = document.getElementById('popupValor')   
+                  let popupDesc = document.getElementById('popupDesc')
+                  window.document.querySelector('#popupImg').src = foto[item]
+                  
+                  popupNome.innerText = nome[item]
+                  popupValor.innerText = 'R$'+valor[item]
+             
+                  n=item
+                  }
+                  function adicionarCarrinho() {
+                  sacola.style.display = 'block'
+                  let nomeC = document.getElementById('itemNome')
+                  let valorC = document.getElementById('itemValor')
+                  document.querySelector('#carrImg').src = foto[n]
+                  
+                  let quantProduto = document.querySelector('#quantProduto').value 
+                  let subTotal = document.querySelector('#subTotal')
+                  subTotal.innerText = 'subtotal: '+(valor[n]*quantProduto)
+                  
+                  nomeC.innerText = nome[n]
+                  valorC.innerText = 'R$'+valor[n]+' x'+quantProduto
+                  
+                  }
+                function fecharPedido(){
+                  chave.style.display = 'none'
+          
+                }
+                function fecharCarrinho() {
+                  sacola.style.display = 'none'
+          
+                }
+                </script>
+              
+      
+        
+</body>
+</html>
+
+
+            
+
+              
