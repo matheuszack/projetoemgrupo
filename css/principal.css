@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,500;1,700;1,800;1,900&family=Roboto+Condensed:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "poppins", sans-serif;
+    outline: none;
+    border:none;  
+    transition: all 2s line;
+}
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+body { 
+    background-size: cover;
+    background-position: center;/*conseguir centralizar a imagem*/
+    height: 100vh;
+    width: 100%; }
+
+section{
+    padding:2rem 9%;
+}
+.sobre {
+   background-color: #CD96CD;
+   width: 600px;
+   padding: 30px;
+   margin: auto;
+   border-radius: 20px;
+   box-shadow: 10px 10px 10px 10px rgb(0, 0, 0);
+}
+
+.subtítulo{
+    text-align: center;
+    color: red;
+    font-size: 3rem;
+    padding-top: 0;
+}
+
+.cabeçalho{
+    text-align: center;
+
+}
+
+.btn{
+
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.7rem;
+    color:rgb(236, 236, 236);
+    background: rgb(0, 0, 0);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    justify-content: center;
+}
+
+.btn:hover{
+    background: red;
+    letter-spacing: 1rem;
+   
+}
+
+header {
+    width: 100%;
+    position:relative;
+    top:0; left: 0; right:0;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgb(0 0 0);
+    z-index: 1000;
+
+} /* este é o cabeçalho todas as configurações de posições das opções para os usuarios estão aqui*/
+
+header .logo{
+    color: black;
+    font-size: 1px;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:black;
+}
+
+header .cabeçalho-link {
+    cursor: pointer; 
+    gap: 3rem;
+    display: flex;
+    font-weight: 500;
+    border-radius: 5rem;
+    color:aliceblue;
+  
+}
+
+header .cabeçalho-link a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 4rem;
+    font-size: 1.7rem;
+}
+header .cabeçalho-link a.active, 
+header .cabeçalho-link a:hover {
+
+    color: rgb(206, 116, 179);
+    transition: 0.4s all;
+    border-radius: 20px;
+    
+}
+
+button {
+
+    color: rgb(0, 0, 0); 
+    padding: 5px;
+    width: 150px;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+} /* margem e bordas modificadas, para possuir um formato mais oval, incluindo aqui também a cor preta para as letras*/
+
+    button:hover{
+        background-color: rgb(114, 27, 172);
+        color:white;
+    } /* quando o usuario passar o cursor em cima de cada opção, ele mudará de cor*/
+
+    .logo {/*para pode adicionar a logo do meu site*/
+        height: 120px;
+        width: 50px;
+        border: 5px solid rgb(0, 0, 0);
+        padding-right: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    
+    }
+
+    .icones {
+    cursor: pointer; 
+    gap: 1rem;
+    display: flex;
+    font-weight: 500;
+    border-radius: 5rem;
+    color:aliceblue;
+   
+    }
+
+    header .icones i,
+    header .icones a {
+
+        cursor: pointer;
+        margin-left: 5rem;
+        height: 4.5rem;
+        width: 4.5rem;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        border-radius: 50%;
+        background: white;
+        padding: 5rem, 1.5rem;
+        line-height: 4.5rem;
+        
+
+    }
+    header .icones i:hover,
+    header .icones a:hover {
+        color: rgb(196, 193, 193);
+        background:rgb(86, 15, 128);
+        transform: rotate(360deg);
+        border-radius: 20px;
+        transition: 0.5s all;
+
+    }
+
+
+#search-form{
+    position: fixed;
+    top:-110%; left:0; 
+    height:100%; width:100%;
+    z-index: 1000;
+    background:rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+}
+
+#search-form.active{
+    top:0;
+}
+
+#search-form#search-box{
+    width:50rem;
+    border-bottom: .1rem solid rgb(255, 255, 255);
+    padding:1rem 0;
+    color:rgb(255, 246, 246);
+    font-size: 3rem;
+    text-transform: none;
+    background:none;
+}
+
+#search-form#search-box::placeholder{
+    color:rgb(128, 97, 97);
+}
+
+#search-form#search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+#search-form label{
+    color:rgb(63, 48, 48);
+    cursor:pointer;
+    font-size: 3rem;
+}
+
+#search-form label:hover{
+    color:var(rgb(250, 250, 250));
+}
+
+#search-form #close{
+    position: absolute;
+    color:rgb(255, 253, 253);
+    cursor: pointer;
+    top: 2rem; right:3rem;
+    font-size: 5rem;
+}
+
+.section.base-slider{
+    display: inline-block;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem; 
+    padding-top: 5rem;
+}
+
+
+
+.sobre .row{
+    color: yellow;
+    display: inline-block;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    text-align: justify;
+}
+
+.sobre .row .image{
+    flex:1 1 45rem;
+    padding-left: 120px;
+
+}
+
+.sobre .row .image img{ 
+    width: 100%;
+}
+
+.sobre .row .content{
+    flex:1 1 45rem;
+}
+
+.content h3{
+    color:red;
+    font-size: 4rem;
+    padding:.5rem 0;
+    text-align: center
+}
+
+.content p {
+    color:yellow;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 2;
+    text-align: center;
+}
+
+.pizzas {
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    background-position: center;
+}
+.sobre .row .content .icones-container{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.content .icones{
+    background:rgb(255, 12, 12);
+    border-radius: .5rem;
+    border:.1rem solid rgb(218, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex:1 1 17rem;
+    padding:1.5rem 1rem;
+}
+
+.content .icones-container .icons i{
+    font-size: 2.5rem;
+    color:var(rgb(207, 24, 24));
+}
+
+.sobre .row .content .icones-container .icones span{
+    font-size: 1.5rem;
+    color:var(black);
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    
+}
+
+.menu .box-container .box{
+    background: rgb(255, 245, 245);
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var("box-shadow"); 
+    max-width: 500px;
+    max-height: 1000px;
+}
+
+.menu .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.menu .box-container .box .image .fa-heart{
+    position: absolute;
+    top:2.5rem; right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    color:var(--black);
+}
+
+.menu .box-container .box .image .fa-heart:hover{
+    background-color:black;
+    color:rgb(255, 255, 255);
+}
+
+.menu .box-container .box .content{
+    padding:2rem;
+    padding-top: 0;
+}
+
+.menu .box-container .box .content .stars{
+    padding-bottom: 1rem;
+}
+
+.menu .box-container .box .content .stars i{
+   font-size: 1.6rem;
+   color:var(black);
+}
+
+.menu .box-container .box .content h3{
+    color:var(black);
+    font-size: 2.5rem;
+}
+
+.menu .box-container .box .content p{
+    color:black;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    padding:.5rem 0;
+}
+
+.menu .box-container .box .content .price{
+    color:var(red);
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.review .slide{
+    padding:2rem;
+    border-radius: .4rem;
+    position: relative;    
+    box-shadow:var("box-shadow");
+    border:.1rem solid rgba(0,0,0,.2);
+}
+
+.review .slide .fa-quote-right{
+    position: absolute;
+    top:2rem; right:2rem;
+    font-size: 6rem;
+    color:rgb(150, 129, 129);
+}
+
+.review .slide .user{
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.review .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .slide .user h3{
+    color:var(black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.review .slide .user i{
+    font-size: 1.3rem;
+    color:var(red);
+}
+
+.review .slide p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var("light-color");
+}
+
+
+
+     .wraper { 
+        background-position: center;
+        padding-top: 5px;/*fazer os slide´s descerem*/
+        height: auto;
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        overflow: hidden;
+        border-radius: 50%;
+        
+        
+      }
+      .scroller {
+        display: flex;
+        width: 100%;
+        animation: slidy 9000ms infinite;
+        
+      }
+      .wraper .scroller img {
+        min-width: calc(100% / 3);
+        flex: 1;
+        padding: 0 .5rem;
+        border-radius: 15%;
+      }
+
+
+
+      @keyframes slidy {
+       0%{margin-left:0%;}
+      20%{margin-left:0%;}
+      
+      25%{margin-left:-100%;}
+      45%{margin-left:-100%;}
+      
+      50%{margin-left:-200%;}
+      70%{margin-left:-200%;}
+      
+      75%{margin-left:-100%;}
+      95%{margin-left:-100%;}
+      
+      100%{margin-left:0%;}
+      }
+      
+ 
+           @media (max-width:768px) {
+           
+            header .cabeçalho-link {
+                display: list-item;  
+        }
+        header .icones #menu-bars {
+            display: list-item;
+        }
+    }
+    
