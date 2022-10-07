@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title>Pizza das Galaxyas - Cardápio Pizza das Galaxyas Rio de Janeiro</title>
+   
+</head>
+<body background="imagem/fundo-pizza1.png">
+  <header>
+    <div class="logo">
+      <i><img src="imagem/picwish-logo.png" alt="Image" height="160" width="160"> </i></div>
+              <nav class="cabeçalho-link">
+              <a class="active" href="index.html"><button>Base</button></a>
+              <a href="quem-somos.html"><button>Quem somos</button></a>
+              <a href="nossa-equipe.html"><button>Nossa equipe</button></a>
+              <a href="cardápio.html"><button>Cardápio</button></a>
+              <a href="contatos.html"><button>Contato</button></a>
+              </nav>
+
+              <div class="icones">
+                <i class="fas fa-search" id="search-icon"></i>
+                <a href="https://ifoodbr.onelink.me/F4X4/ofornes" class="fas fa-pizza-slice"></a>
+                <a href="cardápio.html" class="fa-solid fa-shuttle-space"></a>
+              </div>
+            </header>
+
+        <form action="" id="search-form">
+          <input type="search" placeholder="pesquise aqui..." name="" id="search-box">
+          <label for="search-box" class="fas fa-search"></label>
+          <i class="fas fa-times" id="close"></i>
+        </form>
+   
+        <section class="base" id="base">
+      <div class="wraper">
+
+        <div class="scroller">
+            <img src="imagem/cardapios/BACON-COM-CATUPIRY.jpg" alt="pizza baicon">
+            <img src="imagem/cardapios/banana-nevada.jpg" alt="pizza banana">
+            <img src="imagem/cardapios/CALABRESA-COM-CATUPIRY.jpg" alt="pizza calabresa">
+            
+            <img src="imagem/cardapios/Calabresa-com-cebola.jpg" alt="pizza cebola">
+            <img src="imagem/cardapios/CAMARAO-COM-CATUPIRY.jpg" alt="pizza camarão">
+            <img src="imagem/cardapios/Carne-seca-com-catupiry.jpg" alt="carne seca">
+    
+            <img src="imagem/cardapios/Catuperoni.jpg" alt=" pizza catupiri">
+            <img src="imagem/cardapios/Chocolate-ao-leite-com-banana.jpg" alt="pizza chocolae">
+            <img src="imagem/cardapios/FRANGO-COM-BACON-E-BARBECUE.jpg" alt="piza frango">
+        </div>
+
+    </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div>
+      <h3 class="subtítulo">Bem vindos a nossa estação espacial!!! </h3>
+      <h1 class="cabeçalho"> Porque comer na pizzaria das galaxias? </h1>
+        </div>
+      <div class="row">
+
+        <div class="image">
+          <img class="pizzas" src="imagem/abduction.png" alt="imagem">
+        </div>
+        <div class="content">
+          <h3> Melhor pizzaria da zona oeste!</h3>
+          <p>pizzas saborosas feitas de outro mundo</p>
+          <p>temos diversos sabores para diversos tipos de pessoas, aqui você encontrará algo que te agrade!</p>
+          <div class="icones">
+            <i class="fas fa-shipping-fast"></i>
+            <span>delivery grátis</span>
+          </div>
+          <div class="icones">
+            <i class="fas fa-dollar-sign"></i>
+            <span>aceitamos pix</span>
+          </div>
+          <div class="icones">
+            <i class="fas fa-headset"></i>
+            <span>aberto todos os dias</span>
+          </div>
+        </div>
+        <a href="contatos.html" class="btn">saiba mais</a>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+
+      <h3 class="subtitulo"> nosso menu </h3>
+      <h1 class="cabeçalho"> today's speciality </h1>
+  
+      <div class="box-container">
+  
+          <div class="box">
+              <div class="image">
+                  <img src="imagem/cardapios/QUEIJO-BRIE-COM-GELEIA-DE-PIMENTA.jpg" alt="imagem">
+                  <a href="cardápio.html" class="fas fa-heart"></a>
+              </div>
+              <div class="content">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <h3>pizza de queijo com geleia de pimenta</h3>
+                  <p>pizza de queijo tradicional, com borda recheada feita com creme de leite e igredientes naturais.</p>
+                  <a href="cardápio.html" class="btn">Add to Spaceship</a>
+                  <span class="price">$37,90</span>
+              </div>
+          </div>
+  
+          <div class="box">
+              <div class="image">
+                  <img src="imagem/cardapios/BACON-COM-CATUPIRY.jpg" alt="pizza">
+                  <a href="cardápio.html/#popupImg" class="fas fa-heart"></a>
+              </div>
+              <div class="content">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <h3>pizza deliciosa de bacon com catupiry</h3>
+                  <p>pizza com bacon recheada com presunto, champignon e catupiry salpicado com bacon crocante.</p>
+                  <a href="cardápio.html" class="btn">Add to Spaceship</a>
+                  <span class="price">$39,80</span>
+              </div>
+          </div>
+  
+          <div class="box">
+              <div class="image">
+                  <img src="imagem/cardapios/banana-nevada.jpg" alt="">
+                  <a href="#" class="fas fa-heart"></a>
+              </div>
+              <div class="content">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <h3>pizza deliciosa de banana nevada</h3>
+                  <p>Com uma massa leve e um recheio feito com bananas em rodela, chocolate branco, açúcar e canela, essa pizza serve a família toda, aproveite nossa promoção, apenas nessa Galaxya.</p>
+                  <a href="cardápio.html" class="btn">Add to Spaceship</a>
+                  <span class="price">$33,90</span>
+              </div>
+          </div>
+  
+          <div class="box">
+              <div class="image">
+                  <img src="imagem/cardapios/CAMARAO-COM-CATUPIRY.jpg" alt="">
+                  <a href="#" class="fas fa-heart"></a>
+              </div>
+              <div class="content">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <h3>pizza deliciosa camarão com catupiry</h3>
+                  <p>Que a pizza é uma delícia! todos nós já sabemos, mas essa foi feita em outro mundo, o melhor camarão que você já provou, com complemento de molho e catupiry, e borda recheada!</p>
+                  <a href="cardápio.html" class="btn">Add to Spaceship</a>
+                  <span class="price">$44,50</span>
+              </div>
+          </div>
+  
+          <div class="box">
+              <div class="image">
+                  <img src="imagem/cardapios/Carne-seca-com-catupiry.jpg" alt="">
+                  <a href="#" class="fas fa-heart"></a>
+              </div>
+              <div class="content">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <h3>pizza deliciosa carne seca com catupiry</h3>
+                  <p>Pizza de Carne de Sol/Carne Seca é tipicamente deliciosa isso você já sabe, essa não será diferente, a carne seca com catupiry te fará viajar em novas sensações aproveite nosso desconto e como com sua família.</p>
+                  <a href="cardápio.html" class="btn">Add to Spaceship</a>
+                  <span class="price">$57,80</span>
+              </div>
+          </div>
+  
+          <div class="box">
+              <div class="image">
+                  <img src="imagem/cardapios/Catuperoni.jpg" alt="">
+                  <a href="#" class="fas fa-heart"></a>
+              </div>
+              <div class="content">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <h3>deliciosa pizza de catupirone</h3>
+                  <p>Essa é sucesso para os amantes de peperone, com o acréscimo de catupiry fica ainda melhor,possui molho especial da casa, com molho tradicional e borda recheada.</p>
+                  <a href="cardápio.html" class="btn">Add to Spaceship</a>
+                  <span class="price">$40,00</span>
+              </div>
+          </div>
+  
+          <div class="box">
+              <div class="image">
+                  <img src="imagem/cardapios/Champignon.jpg" alt="">
+                  <a href="cardápio.html" class="fas fa-heart"></a>
+              </div>
+              <div class="content">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <h3>pizza deliciosa Champignon</h3>
+                  <p>Nossa pizza de champignon recheada com molho e adicionais, tempero diferenciado com massa fina, porém borda recheada de frango com molho da casa.</p>
+                  <a href="cardápio.html" class="btn">Add to Spaceship</a>
+                  <span class="price">$35,00</span>
+              </div>
+          </div>
+  
+          <div class="box">
+              <div class="image">
+                  <img src="imagem/cardapios/Chocolate-ao-leite-com-banana.jpg" alt="">
+                  <a href="cardápio.html" class="fas fa-heart"></a>
+              </div>
+              <div class="content">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <h3>pizza deliciosa de chocolate com banana</h3>
+                  <p>Para os amantes da pizza doce temos nossa pizza de chocolate, com um sabor delicioso, chocolate meio amargo, com rodelas de bananas, massa recheada de nuttela ou calda de chocolate.</p>
+                  <a href="#" class="btn">Add to Spaceship</a>
+                  <span class="price">$60,50</span>
+              </div>
+          </div>
+        
+          <div class="box">
+            <div class="image">
+                <img src="imagem/cardapios/chocolate-ao-leite-e-chocolate-branco.jpg" alt="">
+                <a href="cardápio.html/#popupImg" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>pizza deliciosa de chocolate preto e branco</h3>
+                <p>Esta é novidade, porém já é sucesso, nessa receita temos o chocolate meio amargo preto e branco, com borda recheada.</p>
+                <a href="cardápio.html/#carrImg" class="btn">Add to Spaceship</a>
+                <span class="price">$66,40</span>
+            </div>
+        </div>
+      </div>
+  
+  </section>
+  
+        <script src="JS/script.js"></script>
+</body>
+</html>
