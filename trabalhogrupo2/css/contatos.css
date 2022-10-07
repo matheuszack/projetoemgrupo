@@ -6,7 +6,7 @@
     list-style: none;
     font-family: "poppins", sans-serif;
     outline: none;
-    border:none;  
+    border:black;  
     transition: all 2s line;
 }
 html {
@@ -164,10 +164,6 @@ button {
     color:rgb(128, 97, 97);
 }
 
-#search-form#search-box::-webkit-search-cancel-button{
-    -webkit-appearance: none;
-}
-
 #search-form label{
     color:rgb(63, 48, 48);
     cursor:pointer;
@@ -186,12 +182,26 @@ button {
     font-size: 5rem;
 }
 
-    main h1 {
+    main h1{
     
         color: rgb(0, 0, 0);
         font-size: 25px;
         border-color: blueviolet;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+   footer h2{
+        color: beige;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-bottom: 12px;
+        text-decoration: underline;
+    }
+    iframe{
+     
+        width: 50%;
+        height: 50%;
+        margin:auto;
+
     }
     #parecido {
         display:inline-block;
@@ -309,6 +319,17 @@ margin-top: 5px;
 font-size: 14px;
 color: brown;
 }
+section.formulario{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding-left: 50%;
+}
+section.formulario.form{
+   
+   width: 25%;
+
+}
 
 @media (max-width:991px) {
     
@@ -333,4 +354,16 @@ html {font-size: 55%;
     header .icones {
         display: list-item;
     }
+}
+footer{ 
+    background-color: rgb(18, 18, 18);
+    text-align: center;
+	padding: 40px;
+    
+}
+ iframe .mapas{
+    text-align: center;
+    background-image: center;
+    position: center;
+    justify-content: center;
 }
